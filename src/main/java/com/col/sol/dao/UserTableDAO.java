@@ -66,7 +66,7 @@ public UserTable authenticate(String firstname, String possword) {
 
 Session session=sessionFactory.openSession();
 	
-	SQLQuery query=session.createSQLQuery("select * from usertable where firstname=? and possword=? and status='A'");
+SQLQuery query=session.createSQLQuery("select * from usertable where firstname=? and possword=? and status='A'");
 query.setParameter(0,firstname);
 query.setParameter(1,possword);
 
